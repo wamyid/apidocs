@@ -115,7 +115,7 @@ paths:
         - message
       summary: Kirim pesan teks
       description: Mengirimkan pesan teks kepada perorangan atau group
-      operationId: sendMesageText
+      operationId: sendMessageText
       requestBody:
         content:
           application/json:
@@ -144,7 +144,7 @@ paths:
         - message
       summary: Kirim pesan gambar
       description: Mengirimkan pesan gambar kepada perorangan atau group
-      operationId: sendMesageImage
+      operationId: sendMessageImage
       requestBody:
         content:
           application/json:
@@ -169,7 +169,7 @@ paths:
         - message
       summary: Kirim pesan document
       description: Mengirimkan pesan document kepada perorangan atau group
-      operationId: sendMesageDoc
+      operationId: sendMessageDoc
       requestBody:
         content:
           application/json:
@@ -289,6 +289,12 @@ components:
             secret: 
               type: string
               example: isju8ekf9ke
+            readstatusoff: 
+              type: boolean
+              example: false
+            sendtyping: 
+              type: boolean
+              example: false
     UserAccount:
       type: object
       properties:
