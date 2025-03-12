@@ -285,7 +285,7 @@ components:
           properties:
             url: 
               type: string
-              example: https://webhook.com
+              example: https://webhook.site/
             secret: 
               type: string
               example: isju8ekf9ke
